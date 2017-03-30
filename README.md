@@ -1,4 +1,4 @@
-# Ansible Role: Grafana
+# Ansible Role: Grafana [![Build Status](https://travis-ci.org/jradtilbrook/ansible-role-grafana.svg?branch=master)](https://travis-ci.org/jradtilbrook/ansible-role-grafana)
 
 This role installs and configures Grafana - for analytics and monitoring.
 
