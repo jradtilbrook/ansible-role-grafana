@@ -27,7 +27,7 @@ script:
     || (echo 'Idempotence test: fail' && exit 1)
 
   # check a grafana is started and listening
-  - docker exec "`cat $container_id`" systemctl status grafana --no-pager
+  - docker exec "`cat $container_id`" systemctl status grafana-server.service --no-pager
   - docker exec "`cat $container_id`" curl -sI localhost:3000/login | grep -q '200 OK'
 
 notifications:
