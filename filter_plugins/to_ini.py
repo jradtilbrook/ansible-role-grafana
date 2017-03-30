@@ -12,11 +12,12 @@ def to_ini(settings = {}):
         for option in settings[section]:
             # if the value is a list, join it with commas
             if isinstance(settings[section][option], list):
-                value = ', '.join(settings[section][option])
+                value = ' '.join(settings[section][option])
             else: # otherwise just use it as is
                 value = settings[section][option]
             # print the option and value
             s += '%s = %s\n' % (option, value)
+            s.rstrip()
         # add some separation between sections
         s += '\n'
     return s.rstrip()
