@@ -25,4 +25,4 @@ def to_ini(settings = {}):
 
 class FilterModule():
     def filters(self):
-        return {'to_ini': to_ini}
+        return {'grafana_to_ini': to_ini}
